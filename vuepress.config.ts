@@ -21,7 +21,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   public: `./public`,
   // 网站标题，标题颜色可在 src/client/css/main.css 中修改
-  title: 'FList',
+  title: 'Mod Lab镜像',
   // 网站的简介，有助于搜索引擎收录
   description: 'Mod Lab的下载镜像。Power by Mr.Phaeton',
   // 页面 <head> 标签内添加的额外标签。 不要修改/logo.png可以替换掉这个文件，删除logo.png会导致构建出错。
@@ -68,7 +68,7 @@ export default defineUserConfig({
       mountPath: "/configdownload",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
       analysis: fileUrlTreeAnalysis({
-        "/configdownload/gameConfig.json": "https://raw.githubusercontent.com/laoxinH/crosscore-mod-manager/gameConfig/api/gameConfig.json"
+        "/gameConfig.json": "https://raw.githubusercontent.com/laoxinH/crosscore-mod-manager/gameConfig/api/gameConfig.json"
       }),
       downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
     }
