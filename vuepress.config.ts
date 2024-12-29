@@ -64,14 +64,14 @@ export default defineUserConfig({
     //  downProxy: cloudflarePagesDownProxy(),
     //},
     
-    {
-      mountPath: "/configdownload",
+    //{
+     // mountPath: "/configdownload",
       // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "/gameConfig.json": "https://raw.githubusercontent.com/laoxinH/crosscore-mod-manager/gameConfig/api/gameConfig.json"
-      }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    }
+     // analysis: fileUrlTreeAnalysis({
+     //   "/gameConfig.json": "https://raw.githubusercontent.com/laoxinH/crosscore-mod-manager/gameConfig/api/gameConfig.json"
+    //  }),
+    //  downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
+   // }
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
