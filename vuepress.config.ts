@@ -42,19 +42,19 @@ export default defineUserConfig({
         repository: "crosscore-mod-manager"
       }),
       downProxy: cloudflarePagesDownProxy(),
-    },
-    {
+    }//,
+    //{
       // 挂载路径
-      mountPath: "/角砂糖の改版Mod Lab下载",
+      // mountPath: "/角砂糖の改版Mod Lab下载",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
-      analysis: githubReleasesFilesAnalysis({
+    //  analysis: githubReleasesFilesAnalysis({
         // 仓库所有者的用户名
-        user: "lings03",
+     //   user: "lings03",
         // 仓库所有者的仓库名
-        repository: "mod-manager"
-      }),
-      downProxy: cloudflarePagesDownProxy(),
-    },
+     //   repository: "mod-manager"
+   //   }),
+    //  downProxy: cloudflarePagesDownProxy(),
+    //},
     //{
     //  mountPath: "/",
     //  analysis: githubReleasesFilesAnalysis({ user: "laoxinH", repository: "crosscore-mod-manager" }),
