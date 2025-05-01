@@ -43,18 +43,18 @@ export default defineUserConfig({
       }),
       downProxy: cloudflarePagesDownProxy(),
     }//,
-    //{
+    {
       // 挂载路径
-      // mountPath: "/角砂糖の改版Mod Lab下载",
+       mountPath: "/SukiSU-Ultra",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
-    //  analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
-     //   user: "lings03",
-        // 仓库所有者的仓库名
-     //   repository: "mod-manager"
-   //   }),
-    //  downProxy: cloudflarePagesDownProxy(),
-    //},
+      analysis: githubReleasesFilesAnalysis({
+         仓库所有者的用户名
+        user: "ShirkNeko",
+         仓库所有者的仓库名
+        repository: "SukiSU-Ultra"
+      }),
+      downProxy: cloudflarePagesDownProxy(),
+    },
     //{
     //  mountPath: "/",
     //  analysis: githubReleasesFilesAnalysis({ user: "laoxinH", repository: "crosscore-mod-manager" }),
