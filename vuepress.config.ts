@@ -42,7 +42,7 @@ export default defineUserConfig({
         repository: "crosscore-mod-manager"
       }),
       downProxy: cloudflarePagesDownProxy(),
-    }//,
+    },
     {
       // 挂载路径
        mountPath: "/SukiSU-Ultra",
