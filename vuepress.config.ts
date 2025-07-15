@@ -40,7 +40,7 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/",
+      mountPath: "/SukiSU-Ultra",
       analysis: githubReleasesFilesAnalysis({ user: "SukiSU-Ultra", repository: "SukiSU-Ultra" }),
       // 下载代理配置,支持多个平台，参考:https://jjaw.cn/2024/8/3/flist-config-porxy/
       // 这个是为了解决github的国内下载慢的问题，和跨域问题，建议配置，不然pdf，txt，md等文件因为跨域无法预览
