@@ -1,5 +1,7 @@
 {
   "name": "flist",
   "compatibility_date": "2025-07-15",
-  "pages_build_output_dir": ".vuepress/dist"
+  "assets": {
+    "directory": ".vuepress/dist"
+  },  
 }
