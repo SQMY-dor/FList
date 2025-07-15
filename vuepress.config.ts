@@ -47,14 +47,6 @@ export default defineUserConfig({
       // 如果你使用的不是 cloudflare Pages 部署需要删掉这一行，因为如果不是cloudflare Pages部署，这个代理是无法正常工作的
       downProxy: cloudflarePagesDownProxy(),
     },
-    {
-      mountPath: "/test2",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "/test2/FIREFLY-Marble_15U-Hyper2.0.210.0.zip": "https://lp.ikun886.cn/d/Firefly-ROM/%E5%85%AC%E7%89%88/REDMI%20Turbo2/HyperOS%202.0/FIREFLY-Marble_15U-Hyper2.0.210.0/FIREFLY-Marble_15U-Hyper2.0.210.0.zip?sign=7ro0SmmI5Xg5IdAgIg0IoQUpSftILbp3OFq0g2HP9co=:0",
-      }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    },
     // ... 可以配置多个挂载路径和仓库，以此类推
   ])
 })
